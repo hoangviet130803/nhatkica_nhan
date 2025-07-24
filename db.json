@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin123@gmail.com",
+      "password": "123456",
+      "roleId": 1,
+      "image": "https://via.placeholder.com/150",
+      "name": "Ta La Admin",
+      "genderId": 1
+    },
+    {
+      "id": "2",
+      "name": "Nguyen Van A",
+      "email": "AnV123@gmail.com",
+      "password": "123456",
+      "image": "https://via.placeholder.com/150",
+      "genderId": 1,
+      "roleId": 2
+    },
+    {
+      "id": "3",
+      "name": "Nguyen Thi Mai Anh",
+      "email": "AnhMai123568@gmail.com",
+      "password": "admin1308",
+      "image": "https://via.placeholder.com/150",
+      "genderId": 2,
+      "roleId": 2
+    },
+    {
+      "id": "4",
+      "email": "b123@gmail.com",
+      "password": "123456",
+      "roleId": 2,
+      "image": " https://via.placeholder.com/150",
+      "name": "hello",
+      "genderId": 1
+    },
+    {
+      "id": "5",
+      "name": "Chau Tinh Tri",
+      "email": "khachhang01@gmail.com",
+      "password": "123456",
+      "image": "https://via.placeholder.com/150",
+      "genderId": 1,
+      "roleId": 2
+    }
+  ],
+  "gender": [
+    {
+      "id": "1",
+      "name": "male"
+    },
+    {
+      "id": "2",
+      "name": "female"
+    }
+  ],
+  "role": [
+    {
+      "id": "1",
+      "name": "admin"
+    },
+    {
+      "id": "2",
+      "name": "user"
+    }
+  ],
+  "post": [
+    {
+      "id": "1330",
+      "title": "e33e",
+      "content": "ed2ef211112",
+      "isPublic": true,
+      "allowComment": true,
+      "userId": "2",
+      "createdAt": "2025-07-18T08:56:36.238Z",
+      "updatedAt": "2025-07-18T08:57:26.160Z"
+    }
+  ],
+  "comment": [],
+  "likes": [],
+  "histories": [
+    {
+      "id": "2d67",
+      "postId": "1330",
+      "userId": "2",
+      "title": "e33e",
+      "content": "ed2ef2",
+      "editedAt": "2025-07-18T08:56:36.254Z"
+    },
+    {
+      "id": "71a3",
+      "postId": "1330",
+      "userId": "2",
+      "title": "e33e",
+      "content": "ed2ef2",
+      "editedAt": "2025-07-18T08:56:47.178Z"
+    },
+    {
+      "id": "3de9",
+      "postId": "1330",
+      "userId": "2",
+      "title": "e33e",
+      "content": "ed2ef21111",
+      "editedAt": "2025-07-18T08:57:06.692Z"
+    }
+  ]
+}

@@ -27,6 +27,15 @@
 .App-link {
   color: #61dafb;
 }
+.hover-custom :focus {
+  background-color: #0a2a4d; /* Màu nền đậm hơn khi focus */
+  outline: none;
+}
+.hover-custom :hover {
+  background-color: #00f2ff; /* Màu nền nhạt khi hover */
+  color: rgb(0, 0, 244);
+  transition: 2s ease;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +44,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }

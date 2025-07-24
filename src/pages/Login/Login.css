@@ -1,0 +1,75 @@
+.link-hover-custom {
+  font-weight: 400;
+  color: #666666;
+  transition: color 1s ease;
+  cursor: pointer;
+}
+
+.link-hover-custom:hover {
+  background: linear-gradient(to right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+  /* optional fallback */
+}
+
+.input-hover-custom:hover,
+.input-hover-custom:focus {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, rgb(0, 42, 255), #00dbde, #fc00ff, #00dbde, rgb(0, 42, 255));
+  border-image-slice: 1;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  transform: scale(1.05);
+}
+
+.custom-hover-button.btn {
+  background-size: 200% auto;
+  transition: all 0.5s ease, border-color 1s ease;
+  border: 2px solid transparent;
+  color: white;
+}
+
+.custom-hover-button.btn:hover,
+.custom-hover-button.btn:focus {
+  background: linear-gradient(to right, rgb(0, 42, 255), #00dbde, #fc00ff, #00dbde, rgb(0, 42, 255));
+  background-position: right center;
+  border-color: #05a !important;
+  cursor: pointer;
+  outline: none;
+  transform: scale(1.05);
+}
+
+
+
+.fb-icon-hover:hover,
+.tw-icon-hover:hover,
+.gg-icon-hover:hover {
+  border: 1px solid #1c00eb;
+  border-radius: 8px;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #280cff;
+  border-radius: 30px;
+  padding: 10px 12px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: border-color 1s ease, box-shadow 1s ease;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  border-color :#ffee00;
+  
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
