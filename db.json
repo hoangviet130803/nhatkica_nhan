@@ -2,108 +2,81 @@
   "users": [
     {
       "id": "1",
-      "email": "admin123@gmail.com",
-      "password": "123456",
-      "roleId": 1,
-      "image": "https://via.placeholder.com/150",
-      "name": "Ta La Admin",
-      "genderId": 1
+      "username": "vienhn",
+      "email": "hoangviet130803@gmail.com",
+      "password": "1234567",
+      "phoneNumber": "0467896898",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png"
     },
     {
-      "id": "2",
-      "name": "Nguyen Van A",
-      "email": "AnV123@gmail.com",
-      "password": "123456",
-      "image": "https://via.placeholder.com/150",
-      "genderId": 1,
-      "roleId": 2
-    },
-    {
-      "id": "3",
-      "name": "Nguyen Thi Mai Anh",
-      "email": "AnhMai123568@gmail.com",
-      "password": "admin1308",
-      "image": "https://via.placeholder.com/150",
-      "genderId": 2,
-      "roleId": 2
-    },
-    {
-      "id": "4",
-      "email": "b123@gmail.com",
-      "password": "123456",
-      "roleId": 2,
-      "image": " https://via.placeholder.com/150",
-      "name": "hello",
-      "genderId": 1
-    },
-    {
-      "id": "5",
-      "name": "Chau Tinh Tri",
-      "email": "khachhang01@gmail.com",
-      "password": "123456",
-      "image": "https://via.placeholder.com/150",
-      "genderId": 1,
-      "roleId": 2
+      "id": "a602",
+      "username": "hoangv",
+      "email": "viethoang123568@gmail.com",
+      "password": "1234567",
+      "phoneNumber": "0359215997",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/149/149071.png"
     }
   ],
-  "gender": [
+  "posts": [
     {
-      "id": "1",
-      "name": "male"
+      "id": "ca9f",
+      "userId": "a602",
+      "username": "hoangv",
+      "title": "rtrtrtyr",
+      "content": "trtrtrtrtrtrtrt",
+      "isPublic": false,
+      "createdAt": "2026-07-16T18:42:09.381Z",
+      "updatedAt": "2026-07-16T18:47:02.690Z",
+      "likedBy": [],
+      "comments": [],
+      "isDeleted": false,
+      "deletedAt": null,
+      "deletedBy": null
     },
     {
-      "id": "2",
-      "name": "female"
-    }
-  ],
-  "role": [
-    {
-      "id": "1",
-      "name": "admin"
-    },
-    {
-      "id": "2",
-      "name": "user"
-    }
-  ],
-  "post": [
-    {
-      "id": "1330",
-      "title": "e33e",
-      "content": "ed2ef211112",
+      "id": "ee85",
+      "userId": "a602",
+      "username": "hoangv",
+      "title": "rỷyryryr",
+      "content": "gfgfgfggdgd",
       "isPublic": true,
-      "allowComment": true,
-      "userId": "2",
-      "createdAt": "2025-07-18T08:56:36.238Z",
-      "updatedAt": "2025-07-18T08:57:26.160Z"
-    }
-  ],
-  "comment": [],
-  "likes": [],
-  "histories": [
-    {
-      "id": "2d67",
-      "postId": "1330",
-      "userId": "2",
-      "title": "e33e",
-      "content": "ed2ef2",
-      "editedAt": "2025-07-18T08:56:36.254Z"
+      "createdAt": "2026-07-16T18:42:17.277Z",
+      "updatedAt": "2026-07-16T18:42:17.277Z",
+      "likedBy": [],
+      "comments": [],
+      "isDeleted": false,
+      "deletedAt": null,
+      "deletedBy": null
     },
     {
-      "id": "71a3",
-      "postId": "1330",
-      "userId": "2",
-      "title": "e33e",
-      "content": "ed2ef2",
-      "editedAt": "2025-07-18T08:56:47.178Z"
+      "id": "a733",
+      "userId": "a602",
+      "username": "hoangv",
+      "title": "rryryryry",
+      "content": "ỷyryryrtyruyry",
+      "isPublic": true,
+      "createdAt": "2026-07-16T18:42:27.801Z",
+      "updatedAt": "2026-07-16T18:42:27.801Z",
+      "likedBy": [],
+      "comments": [],
+      "isDeleted": false,
+      "deletedAt": null,
+      "deletedBy": null
     },
     {
-      "id": "3de9",
-      "postId": "1330",
-      "userId": "2",
-      "title": "e33e",
-      "content": "ed2ef21111",
-      "editedAt": "2025-07-18T08:57:06.692Z"
+      "id": "f197",
+      "userId": "a602",
+      "username": "hoangv",
+      "title": "rryryry",
+      "content": "ỷyryryry",
+      "isPublic": true,
+      "createdAt": "2026-07-16T18:42:50.918Z",
+      "updatedAt": "2026-07-16T18:42:50.918Z",
+      "likedBy": [],
+      "comments": [],
+      "isDeleted": false,
+      "deletedAt": null,
+      "deletedBy": null
     }
   ]
 }

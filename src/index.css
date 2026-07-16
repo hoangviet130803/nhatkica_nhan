@@ -1,13 +1,202 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --bg-header: #ffffff;
+    --bg: #f8f9fa;
+    --text: #111;
+    --text-muted: #6c757d;
+    --border: #e5e7eb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="dark"] {
+    --bg-header: #1e1e1e;
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #fff;
+    --text-muted: #9ca3af;
+    --border: #333;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+.sidebar {
+    background: var(--bg-header);
+}
+/* ================= Footer ================= */
+
+.footer {
+    background: var(--bg-header);
+    color: var(--text);
+    margin-top: auto;
+    padding: 40px 0;
+    transition: 0.3s;
+    border-top: 1px solid var(--border);
+}
+
+.footer h5 {
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer a:hover {
+    color: #0d6efd;
+}
+
+.footer hr {
+    border-color: var(--border);
+    opacity: 1;
+}
+
+.footer-copy {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+.reaction-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.reaction-pill:hover:not(.disabled) {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.reaction-pill.active {
+    color: #e0245e;
+    border-color: #e0245e;
+}
+
+.reaction-pill.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.reaction-pill .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-section {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+}
+
+.comment-section h5 {
+    margin-bottom: 1rem;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comment-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem;
+    color: var(--text);
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.comment-item:hover {
+    border-color: rgba(13, 110, 253, 0.15);
+}
+
+.comment-item .fw-semibold {
+    font-size: 0.95rem;
+}
+
+.comment-item small,
+.comment-item .comment-time {
+    color: var(--text-muted) !important;
+    font-size: 0.85rem;
+}
+
+.comment-item .reaction-pill {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.75rem;
+}
+
+.comment-item textarea.form-control {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.comment-item textarea.form-control:focus {
+    box-shadow: none;
+    border-color: rgba(13, 110, 253, 0.4);
+}
+
+.comment-form-wrapper {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--card);
+}
+
+.comment-form-wrapper .form-control {
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.comment-form-wrapper .form-control:focus {
+    box-shadow: none;
+    border-color: rgba(13, 110, 253, 0.4);
+}
+
+.comment-replies {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.comment-item .btn-link {
+    color: var(--text);
+    opacity: 0.75;
+}
+
+.comment-item .btn-link:hover {
+    opacity: 1;
 }
