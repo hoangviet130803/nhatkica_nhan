@@ -41,13 +41,13 @@ const Header = () => {
 
                 <div className="d-flex align-items-center gap-3">
                     {/* THEME TOGGLE */}
-                    {/* <Button
+                     <Button
                         size="sm"
                         variant={isDark ? "light" : "dark"}
                         onClick={toggleTheme}
                     >
                         {isDark ? "☀️" : "🌙"}
-                    </Button> */}
+                    </Button>
 
                     <Image
                         src={getDisplayAvatar(user?.avatar)}
